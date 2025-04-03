@@ -273,3 +273,79 @@ html {
 .contact-form button:hover {
     background-color: #e03e4d; /* Slightly darker shade on hover */
 }
+
+/* Responsive CSS */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px; /* Reduce font size for smaller screens */
+  }
+
+  .hero p {
+    font-size: 20px; /* Adjust paragraph font size */
+  }
+
+  .hero button {
+    font-size: 18px; /* Adjust button font size */
+    padding: 8px 15px;
+  }
+
+  .games h2 {
+    font-size: 50px; /* Reduce heading size */
+  }
+
+  .container > div {
+    width: 45%; /* Adjust width of items in the container */
+  }
+
+  .contact-form {
+    max-width: 90%; /* Reduce form width */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .events button {
+    width: 120px; /* Adjust button width */
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 35px; /* Further reduce font size */
+  }
+
+  .hero p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .hero button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 5px 10px;
+  }
+
+  .games h2 {
+    font-size: 35px; /* Reduce heading size */
+  }
+
+  .container > div {
+    width: 100%; /* Stack items vertically */
+  }
+
+  .contact-form {
+    max-width: 100%; /* Full width for mobile */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .events button {
+    width: 100px; /* Adjust button width */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  #go-to-top {
+    width: 40px; /* Adjust button size */
+    height: 40px;
+    font-size: 16px;
+  }
+}
