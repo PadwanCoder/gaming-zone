@@ -175,25 +175,25 @@ html {
 }
 
 .freefire{
-    background-image: url('images/free-fire-logo.jpg');
+    background-image: url('free-fire-logo.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .bg-mi{
-    background-image: url('images/bgmi-game.jpg');
+    background-image: url('bgmi-game.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .valo-rant{
-    background-image: url('images/valorant-logo.jpg');
+    background-image: url('valorant-logo.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .cs-go{
-    background-image: url('images/csgo-logo.jpg');
+    background-image: url('csgo-logo.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -241,7 +241,7 @@ html {
 }
 
 .contact-form {
-    background-image: url('images/wallpaper.jpg');
+    background-image: url('wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
