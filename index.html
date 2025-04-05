@@ -10,7 +10,12 @@
     <header>
       <nav>
         <div id="nav">
-          <span class="logo">GameZone</span>
+          <div class="logo-container">
+            <svg class="console-icon" viewBox="0 0 24 24" width="30" height="30">
+              <path d="M4 6h16v12H4V6zm2 2v8h12V8H6zm5 2h2v2h-2v-2zm-3 0h2v2H8v-2zm6 0h2v2h-2v-2zm-3 4h2v2h-2v-2zm-3 0h2v2H8v-2z"/>
+            </svg>
+            <span class="logo">GameZone</span>
+          </div>
           <div>
             <a href="#home" class="Home">Home</a>
             <a href="#games" class="Games">Games</a>
@@ -22,22 +27,24 @@
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero fade-in" id="home">
       <h1>
         <span class="white">Gaming</span> <span class="red">Unleashed</span>
       </h1>
       <p>Dive into the world of competitive gaming and esports</p>
-      <button class="reddish">Explore Games</button>
-      <button class="blue">Join Events</button>
+      <a href="#games"><button class="reddish">Explore Games</button></a>
+      <a href="#events"><button class="blue">Join Events</button></a>
     </section>
-    <main class="games" id="games">
+    <hr class="page-break" />
+
+    <main class="games fade-in" id="games">
       <h2>Featured Games</h2>
       <div class="container">
         <div class="ff">
           <img
-            src="free-fire-logo.jpg"
+            src="./free-fire-logo.jpg"
             alt="free-fire-logo"
-            width="25%"
+            width="100%"
             height="auto"
             loading="lazy"
           />
@@ -52,9 +59,9 @@
         </div>
         <div class="bgmi">
           <img
-            src="bgmi-game.jpg"
+            src="./bgmi-game.jpg"
             alt="bgmi-game"
-            width="25%"
+            width="100%"
             height="auto"
             loading="lazy"
           />
@@ -69,9 +76,9 @@
         </div>
         <div class="valorant">
           <img
-            src="valorant-logo.jpg"
+            src="./valorant-logo.jpg"
             alt="valorant-logo"
-            width="25%"
+            width="100%"
             height="auto"
             loading="lazy"
           />
@@ -86,9 +93,9 @@
         </div>
         <div class="csgo">
           <img
-            src="csgo-logo.jpg"
+            src="./csgo-logo.jpg"
             alt="csgo-logo"
-            width="25%"
+            width="100%"
             height="auto"
             loading="lazy"
           />
@@ -103,90 +110,71 @@
         </div>
       </div>
     </main>
+    <hr class="page-break" />
 
-    <div class="gap"></div>
-
-    <div class="events" id="events">
-      <h2 style="color: #ff4655; font-size: 50px">Upcoming Events</h2>
+    <section class="events fade-in" id="events">
+      <h2>Upcoming Events</h2>
       <div class="freefire">
         <div class="imfo">
-          <h4>Free Fire Championship</h4>
-          <div style="color: #8f949f">
-            Date: <span style="color: yellow">May 15, 2023</span>
-          </div>
-          <div style="color: #8f949f">
-            Game:<span style="color: whitesmoke"> Free Fire</span>
-          </div>
-          <div style="color: #8f949f">
-            Prize Pool:<span style="color: green"> 10000</span>
-          </div>
+          <h4>
+            <svg class="calendar-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            Free Fire Championship
+          </h4>
+          <div>Date: <span>May 15, 2023</span></div>
+          <div>Game: <span>Free Fire</span></div>
+          <div>Prize Pool: <span>10000</span></div>
           <button>Register Now</button>
         </div>
       </div>
       <div class="bg-mi">
         <div class="imfo">
-          <h4>BGMI Tournament</h4>
-          <div style="color: #8f949f">
-            Date: <span span style="color: yellow">June 5, 2023</span>
-          </div>
-          <div style="color: #8f949f">
-            Game:
-            <span style="color: whitesmoke">Battlegrounds Mobile India</span>
-          </div>
-          <div style="color: #8f949f">
-            Prize Pool: <span style="color: green">15,000</span>
-          </div>
-          <button
-            style="background-color: #ff4655; border: none; border-radius: 5px"
-          >
-            Register Now
-          </button>
+          <h4>
+            <svg class="calendar-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            BGMI Tournament
+          </h4>
+          <div>Date: <span>June 5, 2023</span></div>
+          <div>Game: <span>Battlegrounds Mobile India</span></div>
+          <div>Prize Pool: <span>15,000</span></div>
+          <button>Register Now</button>
         </div>
       </div>
       <div class="valo-rant">
         <div class="imfo">
-          <h4>Valorant College Cup</h4>
-          <div style="color: #8f949f">
-            Date: <span span style="color: yellow">July 10, 2023</span>
-          </div>
-          <div style="color: #8f949f">
-            Game: <span style="color: whitesmoke">Valorant</span>
-          </div>
-          <div style="color: #8f949f">
-            Prize Pool: <span style="color: green">8,000</span>
-          </div>
-          <button
-            style="background-color: #ff4655; border: none; border-radius: 5px"
-          >
-            Register Now
-          </button>
+          <h4>
+            <svg class="calendar-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            Valorant College Cup
+          </h4>
+          <div>Date: <span>July 10, 2023</span></div>
+          <div>Game: <span>Valorant</span></div>
+          <div>Prize Pool: <span>8,000</span></div>
+          <button>Register Now</button>
         </div>
       </div>
       <div class="cs-go">
         <div class="imfo">
-          <h4>CS:GO Showdown</h4>
-          <div style="color: #8f949f">
-            Date: <span span style="color: yellow">August 22, 2023</span>
-          </div>
-          <div style="color: #8f949f">
-            Game:
-            <span style="color: whitesmoke"
-              >Counter-Strike: Global Offensive</span
-            >
-          </div>
-          <div style="color: #8f949f">
-            Prize Pool: <span style="color: green">12,000</span>
-          </div>
-          <button
-            style="background-color: #ff4655; border: none; border-radius: 5px"
-          >
-            Register Now
-          </button>
+          <h4>
+            <svg class="calendar-icon" viewBox="0 0 24 24" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            CS:GO Showdown
+          </h4>
+          <div>Date: <span>August 22, 2023</span></div>
+          <div>Game: <span>Counter-Strike: Global Offensive</span></div>
+          <div>Prize Pool: <span>12,000</span></div>
+          <button>Register Now</button>
         </div>
       </div>
-    </div>
-    <div class="gap-2"></div>
-    <div id="contact-us">
+    </section>
+    <hr class="page-break" />
+
+    <section id="contact-us" class="fade-in">
+      <h2>Contact Me</h2>
       <div class="contact-form">
         <form action="submit_form.php" method="post">
           <label for="name">Name:</label>
@@ -198,6 +186,6 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </section>
   </body>
 </html>
